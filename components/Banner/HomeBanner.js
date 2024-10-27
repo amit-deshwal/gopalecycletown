@@ -21,12 +21,12 @@ export const HomeBanner = () => {
                 {/* Appear Second */}
                 <MotionBTTContainer transition={{ delay: 0.4, duration: 0.5 }}>
                     <PageTitle className="text-center mx-auto" type="heavy">
-                        <div class="text-center pt-10">
-                            <h1 class="text-5xl md:text-6xl font-extrabold text-black drop-shadow-[0_0_5px_rgba(255, 255, 0, 0.7)]">
-                                Maval's Trusted Cycle Shop
+                        <div className="text-center pt-10">
+                            <h1 className="text-5xl md:text-6xl font-extrabold text-black drop-shadow-[0_0_5px_rgba(255, 255, 0, 0.7)]">
+                                Maval&apos;s Trusted Cycle Shop
                             </h1>
-                            <p class="text-2xl md:text-3xl text-yellow-400 mt-4 drop-shadow-[0_0_2px rgba(234, 179, 8, 0.5)]">
-                                Quality Bikes & Expert Service!
+                            <p className="text-2xl md:text-3xl text-yellow-400 mt-4 drop-shadow-[0_0_2px rgba(234, 179, 8, 0.5)]">
+                                Quality Bikes &amp; Expert Service!
                             </p>
                         </div>
                     </PageTitle>
@@ -36,7 +36,7 @@ export const HomeBanner = () => {
                     <Content className="text-center" alignment="center">
                         <p>
                             Explore Top-Quality Bicycles, Accessories, and
-                            Reliable Repairs for Every Rider's Needs.{" "}
+                            Reliable Repairs for Every Rider&apos;s Needs.
                         </p>
                     </Content>
                     <div className="mt-6 mb-16 text-center">
