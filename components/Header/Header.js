@@ -16,10 +16,10 @@ export const Header = () => {
                     <h1 className="logo mb-0">
                         <Link href="/">
                             <Image
-                                src="/nutritrack.svg"
+                                src="/logo.svg"
                                 alt="logo"
-                                className="h-6 w-auto"
-                                height="24"
+                                className="h-14 md:h-20 w-auto"
+                                height="60"
                                 width="100"
                                 priority
                             />
@@ -31,10 +31,10 @@ export const Header = () => {
                     <ButtonGroup className="hidden md:block">
                         <a
                             role="button"
-                            href="https://github.com/chrstnl-gh/nutritrack"
+                            href="https://g.co/kgs/DLs4GP4"
                             className="btn btn--secondary ml-4"
                         >
-                            Get Template
+                            Visit Us
                             <Icon icon="material-symbols:arrow-forward-rounded" />
                         </a>
                     </ButtonGroup>

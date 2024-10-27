@@ -7,31 +7,31 @@ import clsx from "clsx";
 const accordionData = [
     {
         id: uuid(),
-        title: "What is Notion?",
+        title: "What types of bicycles do you sell?",
         isOpen: true,
         content:
-            "Notion is an all-in-one productivity tool that allows you to create notes, databases, and collaborative workspaces, making it easy to organize and manage your tasks, projects, and ideas in one place."
+            "We offer a variety of bicycles, including mountain bikes, road bikes, hybrid bikes, and children's bikes to suit all riders."
     },
     {
         id: uuid(),
-        title: "Who is this template for?",
+        title: "Do you provide bike repairs and maintenance?",
         isOpen: false,
         content:
-            "This template is made for people who want to make a website quickly with a Notion-themed style and prefer to use a template."
+            "Yes, we offer professional bike repair and maintenance services to keep your bicycle in top condition."
     },
     {
         id: uuid(),
-        title: "Do I need to pay for this?",
+        title: "Can I test ride a bike before purchasing?",
         isOpen: false,
         content:
-            "No, this is free. All content on this template are dummy data."
+            "Absolutely! We encourage customers to test ride bikes to ensure they find the perfect fit for their needs."
     },
     {
         id: uuid(),
-        title: "Where can I ask more questions about this template?",
+        title: "What are your store hours?",
         isOpen: false,
         content:
-            "If you have any further questions or need assistance regarding this template, please feel free to reach out to me on my website, or click the Contact within the navigation links."
+            "We are open Monday to Saturday from 10 AM to 7 PM and closed on Sundays."
     }
 ];
 
@@ -67,7 +67,7 @@ export const Accordion = () => {
                 >
                     <h2 className="accordion-item--heading mb-0">
                         <button
-                            className="group relative flex w-full font-semibold items-center rounded-t-lg border-0 bg-white py-4 px-5 text-left text-base text-neutral-800 transition"
+                            className="group relative flex w-full font-semibold items-center rounded-t-lg border-0 bg-white py-4 px-5 text-left text-lg text-neutral-800 transition"
                             type="button"
                             aria-expanded={accordionItem.isOpen}
                             onClick={() =>
@@ -83,7 +83,7 @@ export const Accordion = () => {
                     </h2>
                     <div
                         className={clsx(
-                            "accordion-item--content py-4 px-5 text-base",
+                            "accordion-item--content py-4 px-5 text-lg",
                             {
                                 hidden: activeAccordion !== accordionItem.id, // Use hidden class to animate height to 0
                                 "!visibility block":

@@ -73,6 +73,10 @@ const SEO = ({ title, description, keywords }) => {
             <meta name="msapplication-TileColor" content="#da532c" />
             <meta name="theme-color" content="#ffffff" />
             <meta name="robots" content="noindex nofollow" />
+            <script
+                src="https://static.elfsight.com/platform/platform.js"
+                async
+            ></script>
         </Head>
     );
 };

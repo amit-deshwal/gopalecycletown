@@ -27,22 +27,22 @@ const DATA = [
         items: [
             {
                 label: "About",
-                href: "https://github.com/christian-luntok/",
+                // href: "https://github.com/christian-luntok/",
                 target: "_blank"
             },
             {
                 label: "Twitter",
-                href: "https://github.com/christian-luntok/",
+                // href: "https://github.com/christian-luntok/",
                 target: "_blank"
             },
             {
                 label: "Instagram",
-                href: "https://github.com/christian-luntok/",
+                // href: "https://github.com/christian-luntok/",
                 target: "_blank"
             },
             {
                 label: "Facebook",
-                href: "https://github.com/christian-luntok/",
+                // href: "https://github.com/christian-luntok/",
                 target: "_blank"
             }
         ]
@@ -63,25 +63,22 @@ export const Footer = () => {
                             <div className="footer--logo grid gap-8">
                                 <Link href="/">
                                     <Image
-                                        src="/nutritrack.svg"
+                                        src="/logo.svg"
                                         alt="logo"
-                                        className="h-10 w-auto"
+                                        className="h-16 w-auto"
                                         height="25"
                                         width="100"
                                         priority
                                     />
                                 </Link>
-                                <div className="flex italic flex-wrap text-sm">
-                                    All content on this template are dummy data.
-                                </div>
                                 {/* Get Template button; remove if not used */}
                                 <ButtonGroup alignment="left">
                                     <a
                                         role="button"
-                                        href="https://github.com/christian-luntok/nutritrack"
-                                        className="btn btn--secondary"
+                                        href="https://g.co/kgs/DLs4GP4"
+                                        className="btn btn--secondary ml-8"
                                     >
-                                        Get Template
+                                        Visit Us
                                         <Icon icon="material-symbols:arrow-forward-rounded" />
                                     </a>
                                 </ButtonGroup>
@@ -130,17 +127,7 @@ export const Footer = () => {
             <SectionContainer className="footer-credits relative z-10">
                 <div className="wrap wrap-px py-6">
                     <p className="my-0">
-                        © {year} Nutritrack. All rights reserved{" - "}
-                        <span className="font-normal">
-                            A template by{" "}
-                            <Link
-                                className="transition-colors duration-300 hover:underline"
-                                href="https://chrstnl.com"
-                                target="_blank"
-                            >
-                                chrstnl.
-                            </Link>
-                        </span>
+                        © {year} Gopale Cycle Town. All rights reserved
                     </p>
                 </div>
             </SectionContainer>
