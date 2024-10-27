@@ -17,9 +17,9 @@ const nextConfig = {
         domains: ["s.gravatar.com", "sanrocycles.com"]
     },
     env: {
-        siteTitle: "Your Company",
-        siteDescription: "Your company description.",
-        siteKeywords: "your company keywords",
+        siteTitle: "Gopale Cycle Town",
+        siteDescription: "Best Cycle shop in Maval",
+        siteKeywords: "bicycle, cycle, shop, exercide, fitness",
         siteUrl: "You site url",
         siteImagePreviewUrl: "/images/preview.jpeg",
         twitterHandle: "@your_handle"
