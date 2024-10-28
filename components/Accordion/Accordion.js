@@ -67,7 +67,7 @@ export const Accordion = () => {
                 >
                     <h2 className="accordion-item--heading mb-0">
                         <button
-                            className="group relative flex w-full font-semibold items-center rounded-t-lg border-0 bg-white py-4 px-5 text-left text-lg text-neutral-800 transition"
+                            className="group relative flex w-full font-semibold items-center rounded-t-lg border-0 bg-white py-4 px-5 text-left text-base md:text-lg text-neutral-800 transition"
                             type="button"
                             aria-expanded={accordionItem.isOpen}
                             onClick={() =>
@@ -83,7 +83,7 @@ export const Accordion = () => {
                     </h2>
                     <div
                         className={clsx(
-                            "accordion-item--content py-4 px-5 text-lg",
+                            "accordion-item--content py-4 px-5 text-base md:text-lg",
                             {
                                 hidden: activeAccordion !== accordionItem.id, // Use hidden class to animate height to 0
                                 "!visibility block":

@@ -18,7 +18,7 @@ export const Header = () => {
                             <Image
                                 src="/logo.svg"
                                 alt="logo"
-                                className="h-14 md:h-20 w-auto"
+                                className="h-10 md:h-16 w-auto"
                                 height="60"
                                 width="100"
                                 priority

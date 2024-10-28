@@ -65,7 +65,7 @@ export const Footer = () => {
                                     <Image
                                         src="/logo.svg"
                                         alt="logo"
-                                        className="h-16 w-auto"
+                                        className="h-12 md:h-16 w-auto"
                                         height="25"
                                         width="100"
                                         priority

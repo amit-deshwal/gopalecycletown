@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export const HomeBanner = () => {
     return (
-        <SectionContainer className="page-banner--container py-16">
+        <SectionContainer className="page-banner--container pt-12 pb-16 md:py-16">
             <SectionContainer className="page-banner--inner-container wrap wrap-px z-10">
                 {/* Appear First */}
                 {/* <MotionBTTContainer transition={{ delay: 0.2, duration: 0.5 }}>
@@ -21,7 +21,7 @@ export const HomeBanner = () => {
                 {/* Appear Second */}
                 <MotionBTTContainer transition={{ delay: 0.4, duration: 0.5 }}>
                     <PageTitle className="text-center mx-auto" type="heavy">
-                        <div className="text-center pt-10">
+                        <div className="text-center md:pt-10">
                             <h1 className="text-5xl md:text-6xl font-extrabold text-black drop-shadow-[0_0_5px_rgba(255, 255, 0, 0.7)]">
                                 Maval&apos;s Trusted Cycle Shop
                             </h1>

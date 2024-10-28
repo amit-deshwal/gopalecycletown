@@ -150,7 +150,7 @@ export default function Home() {
                             </BadgeGroup>
                             <PageTitle
                                 className="text-center mx-auto"
-                                type="default"
+                                type="light"
                             >
                                 Have questions about our cycles and services?{" "}
                                 <br></br>

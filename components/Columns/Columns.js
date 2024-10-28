@@ -37,7 +37,7 @@ export const Columns = () => {
     return (
         <SectionContainer className="">
             <div
-                class="elfsight-app-0bc7fa16-d2d5-4149-ae6d-c33a71f784d5"
+                className="elfsight-app-0bc7fa16-d2d5-4149-ae6d-c33a71f784d5"
                 data-elfsight-app-lazy
             ></div>
         </SectionContainer>

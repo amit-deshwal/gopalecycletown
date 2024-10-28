@@ -55,7 +55,7 @@ export const Nav = () => {
                                     key={item.name}
                                     to={item.to}
                                     href={item.href}
-                                    className={`menu-item--link flex items-center text-xl
+                                    className={`menu-item--link flex items-center text-lg lg:text:2xl
                     ${router.pathname === item.href ? "active" : ""}
                   `}
                                     onClick={closeNav}

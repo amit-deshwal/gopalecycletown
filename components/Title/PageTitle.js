@@ -3,7 +3,8 @@ import clsx from "clsx";
 
 const titleVariant = {
     heavy: "text-4xl lg:text-6xl",
-    default: "text-3xl lg:text-5xl"
+    default: "text-3xl lg:text-5xl",
+    light: "text-2xl lg: md:text-5xl"
 };
 export const PageTitle = ({ children, className = "", type = "" }) => {
     const titleClass = clsx("h2 font-semibold", titleVariant[type], className);
