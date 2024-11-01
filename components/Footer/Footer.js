@@ -9,13 +9,23 @@ const DATA = [
         title: "Template",
         items: [
             {
+                label: "Brands",
+                href: "#brands"
+            },
+
+            {
+                label: "Happy Customers",
+                href: "#testimonials"
+            },
+            {
+                label: "Shop Showcase",
+                href: "#shop-gallery"
+            },
+            {
                 label: "Features",
                 href: "#features"
             },
-            {
-                label: "Testimonials",
-                href: "#testimonials"
-            },
+
             {
                 label: "FAQ",
                 href: "#faq"
@@ -63,9 +73,9 @@ export const Footer = () => {
                             <div className="footer--logo grid gap-8">
                                 <Link href="/">
                                     <Image
-                                        src="/logo.svg"
+                                        src="/main.png"
                                         alt="logo"
-                                        className="h-12 md:h-16 w-auto"
+                                        className="h-[56px] w-[86px] md:h-[84px] md:w-[126px]"
                                         height="25"
                                         width="100"
                                         priority
@@ -76,7 +86,7 @@ export const Footer = () => {
                                     <a
                                         role="button"
                                         href="https://g.co/kgs/DLs4GP4"
-                                        className="btn btn--secondary ml-8"
+                                        className="btn btn--secondary"
                                     >
                                         Visit Us
                                         <Icon icon="material-symbols:arrow-forward-rounded" />

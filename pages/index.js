@@ -16,6 +16,7 @@ import {
     CardImage,
     Card
 } from "@components/Card";
+import { ShopColumns } from "@components/Columns/ShopColumns";
 
 export default function Home() {
     return (
@@ -33,7 +34,7 @@ export default function Home() {
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
-                        <SectionContainer id="features" className="features">
+                        <SectionContainer id="brands" className="features">
                             <BadgeGroup alignment="center">
                                 <BadgeMessage>Brands</BadgeMessage>
                             </BadgeGroup>
@@ -46,11 +47,57 @@ export default function Home() {
                             <ContentImage />
                         </SectionContainer>
                     </MotionBTTContainer>
+
+                    {/* Testimonials */}
+                    <MotionBTTContainer
+                        transition={{ delay: 0.2, duration: 0.5 }}
+                    >
+                        <SectionContainer
+                            id="testimonials"
+                            className="benefits"
+                        >
+                            <BadgeGroup alignment="left">
+                                <BadgeMessage>Happy Customers</BadgeMessage>
+                                <BadgeIcon icon="twemoji:partying-face" />
+                            </BadgeGroup>
+                            <PageTitle
+                                className="h2 font-semibold text-2xl lg:text-4xl text"
+                                type="default"
+                            >
+                                <div>Celebrating Life on Two Wheels!</div>
+                            </PageTitle>
+                            <Columns />
+                        </SectionContainer>
+                    </MotionBTTContainer>
+                    {/* Gallery */}
+                    <MotionBTTContainer
+                        transition={{ delay: 0.2, duration: 0.5 }}
+                    >
+                        <SectionContainer
+                            id="shop-gallery"
+                            className="benefits"
+                        >
+                            <BadgeGroup alignment="left">
+                                <BadgeMessage>Shop Showcase</BadgeMessage>
+                                <BadgeIcon icon="twemoji:camera-with-flash" />
+                            </BadgeGroup>
+                            <PageTitle
+                                className="h2 font-semibold text-2xl lg:text-4xl text"
+                                type="default"
+                            >
+                                <div>Explore Our Shop: Inside & Out</div>
+                            </PageTitle>
+                            <ShopColumns />
+                        </SectionContainer>
+                    </MotionBTTContainer>
                     {/* Card Container Tabs */}
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
-                        <SectionContainer className="feature-tabs">
+                        <SectionContainer
+                            id="features"
+                            className="feature-tabs"
+                        >
                             <BadgeGroup alignment="center">
                                 <BadgeMessage>More Features</BadgeMessage>
                                 <BadgeIcon icon="twemoji:waving-hand" />
@@ -119,25 +166,6 @@ export default function Home() {
                                     </CardBody>
                                 </Card>
                             </CardGroup>
-                        </SectionContainer>
-                    </MotionBTTContainer>
-                    {/* Testimonials */}
-                    <MotionBTTContainer
-                        transition={{ delay: 0.2, duration: 0.5 }}
-                    >
-                        <SectionContainer
-                            id="testimonials"
-                            className="benefits"
-                        >
-                            <BadgeGroup alignment="left">
-                                <BadgeMessage>Testimonials</BadgeMessage>
-                                <BadgeIcon icon="twemoji:waving-hand" />
-                            </BadgeGroup>
-                            {/* <PageTitle className="" type="default">
-                                This is what our customers have to say about
-                                this template
-                            </PageTitle> */}
-                            <Columns />
                         </SectionContainer>
                     </MotionBTTContainer>
                     {/* Accordions */}

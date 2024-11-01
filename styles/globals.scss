@@ -1,18 +1,3 @@
-/*
-
-=========================================================
-* CHRSTNL CSS Kit v1.0.0
-=========================================================
-
-* Demo Page: 'https://nutritrack.chrstnl.com/'
-* Copyright 2023 @chrstnl 
-* Coded by @chrstnl
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // Core CSS Reset/MISCS
 @import "core/misc";
 
@@ -32,6 +17,30 @@
 @import "core/components/card";
 @import "core/components/page-banner";
 @import "core/components/footer";
+
+.embla {
+    overflow: hidden;
+}
+.embla__container {
+    display: flex;
+}
+
+.embla__slide {
+    flex: 0 0 100%; /* Full width by default */
+    min-width: 0;
+    position: relative;
+    width: 100%; /* Ensure each slide is full width */
+    overflow: hidden; /* Hide overflow to make images fit better */
+    border-radius: 8px;
+}
+
+@media (min-width: 1024px) {
+    /* sm: 640px and up */
+    .embla__slide {
+        flex: 0 0 40%; /* 40% width on larger screens */
+        margin-right: 12px;
+    }
+}
 
 // Core Plugins
 // @import "plugins/plugin-tailwind";

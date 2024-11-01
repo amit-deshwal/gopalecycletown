@@ -1,18 +1,19 @@
 import { useState } from "react";
-import Link from "next/link";
 import { Icon } from "@iconify/react";
 import { useRouter } from "next/router";
 
 const navigation = [
+    { name: "Brands", to: "#brands", href: "/#brands" },
+    { name: "Happy Customers", to: "#testimonials", href: "/#testimonials" },
+    { name: "Shop Showcase", to: "#shop-gallery", href: "/#shop-gallery" },
     { name: "Features", to: "#features", href: "/#features" },
-    { name: "Testimonials", to: "#testimonials", href: "/#testimonials" },
-    { name: "FAQ?", to: "#faq", href: "/#faq" },
-    {
-        name: "Contact",
-        href: "https://chrstnl.com/",
-        isArrow: true,
-        target: "_blank"
-    }
+    { name: "FAQ?", to: "#faq", href: "/#faq" }
+    // {
+    //     name: "Contact",
+    //     href: "https://chrstnl.com/",
+    //     isArrow: true,
+    //     target: "_blank"
+    // }
 ];
 
 export const Nav = () => {

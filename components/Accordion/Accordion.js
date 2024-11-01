@@ -30,8 +30,7 @@ const accordionData = [
         id: uuid(),
         title: "What are your store hours?",
         isOpen: false,
-        content:
-            "We are open Monday to Saturday from 10 AM to 7 PM and closed on Sundays."
+        content: "We’re open daily from 9 AM to 9 PM. Come by anytime!"
     }
 ];
 
