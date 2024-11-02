@@ -83,12 +83,12 @@ export const Footer = () => {
                                 </Link>
 
                                 <div
-                                    className="badge-group--phone-numbers flex flex-wrap"
+                                    className="badge-group--phone-numbers flex flex-wrap justify-start items-center"
                                     id="contact-us"
                                 >
                                     <BadgeIcon
                                         icon="twemoji:telephone-receiver"
-                                        className="ml-0 mr-0"
+                                        className="ml-0" // Margin for mobile
                                     />
                                     {["9284643679", "8181939382"].map(
                                         (number, index) => (
@@ -99,12 +99,12 @@ export const Footer = () => {
                 bg-blue-100 text-blue-800 font-semibold 
                 py-1 px-3 rounded-md transition-all
                 hover:bg-blue-200 hover:text-blue-900
-                ${index < 1 ? "mr-4" : ""}`}
+                ${index === 0 ? "mr-1" : ""}`} // Margin for last number and text size for mobile
                                             >
                                                 {number.replace(
                                                     /(\d{3})(\d{3})(\d{4})/,
                                                     "$1_$2_$3"
-                                                )}{" "}
+                                                )}
                                             </a>
                                         )
                                     )}
