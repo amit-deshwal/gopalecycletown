@@ -3,10 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { ButtonGroup } from "@components/Button";
 import { Icon } from "@iconify/react";
+import { BadgeGroup, BadgeIcon, BadgeMessage } from "@components/Badge";
 
 const DATA = [
     {
-        title: "Template",
+        title: "Company",
         items: [
             {
                 label: "Brands",
@@ -22,41 +23,40 @@ const DATA = [
                 href: "#shop-gallery"
             },
             {
-                label: "Features",
-                href: "#features"
-            },
-
-            {
                 label: "FAQ",
                 href: "#faq"
-            }
-        ]
-    },
-    {
-        title: "Company",
-        items: [
-            {
-                label: "About",
-                // href: "https://github.com/christian-luntok/",
-                target: "_blank"
             },
             {
-                label: "Twitter",
-                // href: "https://github.com/christian-luntok/",
-                target: "_blank"
-            },
-            {
-                label: "Instagram",
-                // href: "https://github.com/christian-luntok/",
-                target: "_blank"
-            },
-            {
-                label: "Facebook",
-                // href: "https://github.com/christian-luntok/",
-                target: "_blank"
+                label: "Contact Us",
+                href: "#contact-us"
             }
         ]
     }
+    // {
+    //     title: "Company",
+    //     items: [
+    //         {
+    //             label: "About",
+    //             // href: "https://github.com/christian-luntok/",
+    //             target: "_blank"
+    //         },
+    //         {
+    //             label: "Twitter",
+    //             // href: "https://github.com/christian-luntok/",
+    //             target: "_blank"
+    //         },
+    //         {
+    //             label: "Instagram",
+    //             // href: "https://github.com/christian-luntok/",
+    //             target: "_blank"
+    //         },
+    //         {
+    //             label: "Facebook",
+    //             // href: "https://github.com/christian-luntok/",
+    //             target: "_blank"
+    //         }
+    //     ]
+    // }
 ];
 
 export const Footer = () => {
@@ -81,6 +81,35 @@ export const Footer = () => {
                                         priority
                                     />
                                 </Link>
+
+                                <div
+                                    className="badge-group--phone-numbers flex flex-wrap"
+                                    id="contact-us"
+                                >
+                                    <BadgeIcon
+                                        icon="twemoji:telephone-receiver"
+                                        className="ml-0 mr-0"
+                                    />
+                                    {["9284643679", "8181939382"].map(
+                                        (number, index) => (
+                                            <a
+                                                key={index}
+                                                href={`tel:${number}`}
+                                                className={`badge-group--phone-link 
+                bg-blue-100 text-blue-800 font-semibold 
+                py-1 px-3 rounded-md transition-all
+                hover:bg-blue-200 hover:text-blue-900
+                ${index < 1 ? "mr-4" : ""}`}
+                                            >
+                                                {number.replace(
+                                                    /(\d{3})(\d{3})(\d{4})/,
+                                                    "$1_$2_$3"
+                                                )}{" "}
+                                            </a>
+                                        )
+                                    )}
+                                </div>
+
                                 {/* Get Template button; remove if not used */}
                                 <ButtonGroup alignment="left">
                                     <a

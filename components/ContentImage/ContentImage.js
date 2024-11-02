@@ -37,8 +37,8 @@ export const ContentImage = () => {
                     src="https://sanrocycles.com/wp-content/uploads/2024/01/14733KG-GreenSquareCyclingCourse-GreenSquareCyclingCourse-Highres-7859a.jpg"
                     alt="People riding bicycles"
                     layout="fill"
-                    objectFit="cover"
                     className="absolute z-0"
+                    style={{ objectFit: "cover" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/20 z-10"></div>
                 <div className="relative z-20 w-full max-w-6xl px-4 py-12 sm:px-6 lg:px-8">

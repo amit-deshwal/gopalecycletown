@@ -6,8 +6,9 @@ const navigation = [
     { name: "Brands", to: "#brands", href: "/#brands" },
     { name: "Happy Customers", to: "#testimonials", href: "/#testimonials" },
     { name: "Shop Showcase", to: "#shop-gallery", href: "/#shop-gallery" },
-    { name: "Features", to: "#features", href: "/#features" },
-    { name: "FAQ?", to: "#faq", href: "/#faq" }
+    { name: "FAQ?", to: "#faq", href: "/#faq" },
+    { name: "Contact Us", to: "#contact-us", href: "/#contact-us" }
+
     // {
     //     name: "Contact",
     //     href: "https://chrstnl.com/",

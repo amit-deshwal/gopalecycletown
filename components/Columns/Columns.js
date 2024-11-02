@@ -4,7 +4,7 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
 export const Columns = () => {
-    const [emblaRef] = useEmblaCarousel({ loop: false }, [
+    const [emblaRef] = useEmblaCarousel({ loop: true }, [
         Autoplay({ playOnInit: true, delay: 3000 })
     ]);
 

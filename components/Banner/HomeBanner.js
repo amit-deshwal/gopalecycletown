@@ -62,8 +62,8 @@ export const HomeBanner = () => {
                             width={1024}
                             height={680}
                             alt="Page Banner"
-                            objectFit="cover"
                             className="mx-auto"
+                            style={{ objectFit: "cover" }}
                         />
                     </div>
                 </MotionBTTContainer>
