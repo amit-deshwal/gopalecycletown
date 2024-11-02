@@ -26,19 +26,24 @@
 }
 
 .embla__slide {
-    flex: 0 0 70%; /* Full width by default */
+    flex: 0 0 100%; /* Full width by default */
     min-width: 0;
     position: relative;
     width: 100%; /* Ensure each slide is full width */
     overflow: hidden; /* Hide overflow to make images fit better */
     border-radius: 8px;
+    margin-right: 8px;
+}
+
+@media (min-width: 640px) {
+    .embla__slide {
+        flex: 0 0 70%; /* 70% width on medium screens */
+    }
 }
 
 @media (min-width: 1024px) {
-    /* sm: 640px and up */
     .embla__slide {
         flex: 0 0 40%; /* 40% width on larger screens */
-        margin-right: 12px;
     }
 }
 

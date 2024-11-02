@@ -4,8 +4,8 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
 export const ShopColumns = () => {
-    const [emblaRef] = useEmblaCarousel({ loop: false }, [
-        Autoplay({ playOnInit: true, delay: 3000 })
+    const [emblaRef] = useEmblaCarousel({ loop: true }, [
+        Autoplay({ playOnInit: true, delay: 2000 })
     ]);
 
     // Generate an array of image paths from 1 to 5
